@@ -27,6 +27,10 @@ Route::get('/messages', 'MessagesController@getMessages');
 
 Route::post('/contact/submit', 'MessagesController@submit');
 
+Route::get('/upload', function () {
+    return view('upload');
+});
+
 
 
 

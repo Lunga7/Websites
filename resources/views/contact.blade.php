@@ -56,9 +56,29 @@
 
                   </form>
                 </div>
-              </div>
-   
 
-      {!! Form::close() !!}
+      <div class="col-lg-4 ml-auto">
+          <div class="p-4 mb-3 bg-white">
+            <h3 class="h5 text-black mb-3">Contact Info</h3>
+            <p class="mb-0 font-weight-bold text-black">Address</p>
+            <p class="mb-4 text-black">203 Fake St. Mountain View, San Francisco, California, USA</p>
+  
+            <p class="mb-0 font-weight-bold text-black">Phone</p>
+            <p class="mb-4"><a href="#">+1 232 3235 324</a></p>
+  
+            <p class="mb-0 font-weight-bold text-black">Email Address</p>
+            <p class="mb-0"><a href="#">youremail@domain.com</a></p>
+  
+          </div>
+  
+          
+        </div>
+
+
+
+
+
+</div>
+{!! Form::close() !!}
 
 @endsection
