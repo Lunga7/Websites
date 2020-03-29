@@ -17,6 +17,7 @@ Route::get('/', function () {
     return view('home');
 });
 
+
 Route::get('/userhome', 'PagesController@getUserHome');
 
 Route::get('/about', 'PagesController@getAbout');
@@ -32,9 +33,6 @@ Route::get('/upload', function () {
 });
 
 
-
-
-Route::get('/home','HomeController@index')->name('home');
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/admin', 'HomeController@index')->name('home');
