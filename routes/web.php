@@ -14,8 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('welcome');
 });
+
+Auth::routes();
+Route::get('/admin', 'HomeController@index')->name('home');
+
+Route::get('/admin/categories', 'CategoriesController@index')->name('list_category');
 
 
 Route::get('/userhome', 'PagesController@getUserHome');
@@ -33,6 +38,3 @@ Route::get('/upload', function () {
 });
 
 
-Auth::routes();
-
-Route::get('/admin', 'HomeController@index')->name('home');
