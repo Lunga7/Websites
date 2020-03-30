@@ -178,9 +178,17 @@
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
+              with font-awesome or any other icon font library -->
+
+          <?php
+              $segment = Request::segment(2);
+          ?>
           <li class="nav-item">
-            <a href="#" class="nav-link active">
+            <a href="{{ route('home') }}" class="nav-link
+            @if(!$segment)
+            active
+            @endif
+            ">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -189,7 +197,11 @@
             
           </li>
           <li class="nav-item">
-            <a href="{{ route('list_category') }}" class="nav-link">
+            <a href="{{ route('admin.categories.index') }}" class="nav-link 
+            @if($segment=='categories')
+            active
+            @endif
+            ">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Category
@@ -199,9 +211,13 @@
           <li class="nav-item">
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/layout/top-nav.html" class="nav-link">
+                <a href="{{ route('admin.arts.index') }}" class="nav-link
+                @if($segment=='messages')
+                active
+                @endif
+                ">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Messages</p>
+                  <p>Arts</p>
                 </a>
               </li>
               <li class="nav-item">
@@ -243,10 +259,14 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="{{ route('admin.arts.index') }}" class="nav-link
+            @if($segment=='arts')
+            active
+            @endif
+            ">
               <i class="nav-icon fas fa-chart-pie"></i>
               <p>
-                Messages
+                Arts
               </p>
             </a>
           </li>

@@ -20,8 +20,9 @@ Route::get('/', function () {
 Auth::routes();
 Route::get('/admin', 'HomeController@index')->name('home');
 
-Route::get('/admin/categories', 'CategoriesController@index')->name('list_category');
+Route::resource('/admin/categories','Admin\CategoriesController', ['as'=>'admin']);
 
+Route::resource('/admin/arts','Admin\ArtsController', ['as'=>'admin']);
 
 Route::get('/userhome', 'PagesController@getUserHome');
 
