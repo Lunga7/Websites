@@ -30,7 +30,7 @@ class CategoriesController extends Controller
      */
     public function create()
     {
-        return view('admin.arts.create');
+        return view('admin.categories.create');
     }
 
     /**

@@ -18,44 +18,44 @@
 {!! Form::open(['url' => 'contact/submit']) !!}
 
     
-              <div class="row">
-  
-                <div class="col-md-12 col-lg-7 mb-5">
+  <div class="row">
 
-                  <form action="#" class="contact-form">
+  <div class="col-md-12 col-lg-7 mb-5">
 
-                    <div class="row form-group">
-                      <div class="col-md-12 mb-3 mb-md-0">
-                        {{Form::label('name', 'Name')}}
-                        {{Form::text('name', '', ['class' => 'form-control', 'placeholder' => 'Enter Full Name'])}}
-                      </div>
-                    </div>
+  <form action="#" class="contact-form">
 
-                    <div class="row form-group">
-                      <div class="col-md-12 mb-3 mb-md-0">
-                        {{Form::label('email', 'Email')}}
-                        {{Form::text('email', '', ['class' => 'form-control', 'placeholder' => 'Enter Email'])}}
-                      </div>
-                    </div>
+    <div class="row form-group">
+      <div class="col-md-12 mb-3 mb-md-0">
+        {{Form::label('name', 'Name')}}
+        {{Form::text('name', '', ['class' => 'form-control', 'placeholder' => 'Enter Full Name'])}}
+      </div>
+    </div>
 
-                    <div class="row form-group">
-                      <div class="col-md-12 mb-3 mb-md-0">
-                        {{Form::label('message', 'Message')}}
-                        {{Form::textarea('message', '', ['class' => 'form-control', 'placeholder' => 'Enter Message'])}}
-                      </div>
-                    </div>
+    <div class="row form-group">
+      <div class="col-md-12 mb-3 mb-md-0">
+        {{Form::label('email', 'Email')}}
+        {{Form::text('email', '', ['class' => 'form-control', 'placeholder' => 'Enter Email'])}}
+      </div>
+    </div>
 
-
-                    <div class="row form-group">
-                      <div class="col-md-12">
-                        {{Form::submit('Submit', ['class'=> 'btn btn-primary py-3 px-4'])}}
-                      </div>
-                    </div>
+    <div class="row form-group">
+      <div class="col-md-12 mb-3 mb-md-0">
+        {{Form::label('message', 'Message')}}
+        {{Form::textarea('message', '', ['class' => 'form-control', 'placeholder' => 'Enter Message'])}}
+      </div>
+    </div>
 
 
+    <div class="row form-group">
+      <div class="col-md-12">
+        {{Form::submit('Submit', ['class'=> 'btn btn-primary py-3 px-4'])}}
+      </div>
+    </div>
 
-                  </form>
-                </div>
+
+
+  </form>
+  </div>
 
       <div class="col-lg-4 ml-auto">
           <div class="p-4 mb-3 bg-white">

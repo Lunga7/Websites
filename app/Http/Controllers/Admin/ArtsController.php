@@ -43,7 +43,18 @@ class ArtsController extends Controller
      */
     public function store(Request $request, Art $art)
     {
+        if($request->image->getClientOriginalName())
+        {
+            $ext =  $request->image->getClientOriginalExtension();
+            $file = date('YmdHis').rand(1,99999).'.'.$ext;
+            $request->image->storeAs('public/arts',$file);
+        }
+        else
+        {
+            $file = '';
+        }
         $art->title = $request->title;
+        $art->image = $file;
         $art->description = $request->description;
         $art->save();
         return redirect()->route('admin.arts.index');
@@ -66,9 +77,11 @@ class ArtsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Art $art)
     {
-        //
+        $arr['arts'] = $art;
+        $arr['categories'] = Category::all();
+        return view('admin.arts.edit')->with($arr);
     }
 
     /**
