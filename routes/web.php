@@ -18,11 +18,15 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-Route::get('/admin', 'HomeController@index')->name('home');
 
-Route::resource('/admin/categories','Admin\CategoriesController', ['as'=>'admin']);
+Route::namespace('Admin')->prefix('admin')->as('admin.')->middleware('auth')->group(function()
+{
+    Route::get('/', 'HomeController@index')->name('home');
+    Route::resource('/categories','CategoriesController');
+    Route::resource('/arts','ArtsController');
+});
 
-Route::resource('/admin/arts','Admin\ArtsController', ['as'=>'admin']);
+
 
 Route::get('/userhome', 'PagesController@getUserHome');
 

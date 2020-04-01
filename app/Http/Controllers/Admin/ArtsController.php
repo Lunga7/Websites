@@ -9,11 +9,6 @@ use App\Art;
 
 class ArtsController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
     /**
      * Display a listing of the resource.
      *
@@ -21,7 +16,7 @@ class ArtsController extends Controller
      */
     public function index()
     {
-        $arr['arts'] = Art::all();
+        $arr['arts'] = Art::paginate(5);
         return view('admin.arts.index')->with($arr);
     }
 
@@ -32,7 +27,8 @@ class ArtsController extends Controller
      */
     public function create()
     {
-        return view('admin.arts.create');
+        $arr['categories'] = Category::all();
+        return view('admin.arts.create')->with($arr);
     }
 
     /**
@@ -53,6 +49,7 @@ class ArtsController extends Controller
         {
             $file = '';
         }
+        $art->category_id = $request->category_id;
         $art->title = $request->title;
         $art->image = $file;
         $art->description = $request->description;
@@ -91,9 +88,27 @@ class ArtsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Art $art)
     {
-        //
+        if(isset($request->image) && $request->image->getClientOriginalName())
+        {
+            $ext =  $request->image->getClientOriginalExtension();
+            $file = date('YmdHis').rand(1,99999).'.'.$ext;
+            $request->image->storeAs('public/arts',$file);
+        }
+        else
+        {
+            if(!$art->image)
+                $file = '';
+            else
+                $file = $art->image;
+        }
+        $art->category_id = $request->category_id;
+        $art->image = $file;
+        $art->title = $request->title;
+        $art->description = $request->description;
+        $art->save();
+        return redirect()->route('admin.arts.index');
     }
 
     /**
@@ -102,8 +117,9 @@ class ArtsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Art $art)
     {
-        //
+        $art->delete();
+        return redirect()->route('admin.arts.index');
     }
 }

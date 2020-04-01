@@ -10,7 +10,7 @@
         </div><!-- /.col -->
         <div class="col-sm-6">
         <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="{{ route('home') }}">Dashboard</a></li> 
+            <li class="breadcrumb-item"><a href="{{ route('admin.home') }}">Dashboard</a></li> 
             <li class="breadcrumb-item active">Arts</li>
         </ol>
         </div><!-- /.col -->
@@ -29,6 +29,7 @@
             <tr>
                 <th>ID</th>
                 <th>Title</th>
+                <th>Category</th>
                 <th>Action</th>
             </tr>
             @if(count($arts))
@@ -36,6 +37,7 @@
                 <tr>
                     <td>{{ $a->id }}</td>
                     <td>{{ $a->title }}</td>
+                    <td>{{ $a->category->title }}</td>
                     <td><a href="{{ route('admin.arts.edit', $a->id) }}" class="btn btn-info">Edit</a> 
                     <a href="javascript:void(0)" onclick="$(this).parent().find('form').submit()" class="btn btn-danger">Delete</a>
                     <form action="{{ route('admin.arts.destroy',$a->id) }}" method="post">
@@ -49,7 +51,7 @@
             <tr><td colspan="3">No Arts Found</td></tr>
             @endif
         </table>
-
+        {{ $arts->render() }}
     </div>
 </section>
 
