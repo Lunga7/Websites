@@ -1,14 +1,23 @@
 @extends('layouts.app')
 
+@section('p1')
+<div class="row align-items-center justify-content-center">
+    <div class="col-md-7 text-center" data-aos="fade-up" data-aos-delay="400">
+        <h1 class="text-white">Register</h1>
+        <p>Enter your details below.</p>
+    </div>
+</div>
+@endsection
+
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+        <div class="col-md-12 col-lg-7 mb-5">
+            
+                
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
+                
+                    <form method="POST" class="contact-form" action="{{ route('register') }}">
                         @csrf
 
                         <div class="form-group row">
@@ -69,8 +78,8 @@
                             </div>
                         </div>
                     </form>
-                </div>
-            </div>
+                
+            
         </div>
     </div>
 </div>

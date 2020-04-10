@@ -6,25 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900|Oswald:400,700"> 
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="public/fonts/icomoon/style.css">
 
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/jquery-ui.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/bootstrap-datepicker.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/mediaelementplayer.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
-    <link rel="stylesheet" href="{{ asset('fonts/flaticon/font/flaticon.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/fl-bigmug-line.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/css/jquery-ui.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/css/bootstrap-datepicker.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/css/mediaelementplayer.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/css/animate.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/fonts/flaticon/font/flaticon.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/css/fl-bigmug-line.css') }}">
     
   
-    <link rel="stylesheet" href="{{ asset('css/aos.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/css/aos.css') }}">
 
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/css/style.css') }}">
 
-    <link rel="stylesheet" href="{{ asset('css1/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/css1/style.css') }}">
     
   </head>
   <body>
@@ -32,7 +32,7 @@
   @include('inc.navbar')
   </div>
 
-<div class="site-blocks-cover overlay" style="background-image: url('images/hero_bg_1.jpg');" data-aos="fade" data-stellar-background-ratio="0.5" data-aos="fade">
+<div class="site-blocks-cover overlay" style="background-image: url('public/images/hero_bg_1.jpg');" data-aos="fade" data-stellar-background-ratio="0.5" data-aos="fade">
   <div class="container">
 
     @yield('p1')
@@ -93,39 +93,39 @@
  
 
 
-<script src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
-  <script src="{{ asset('js/jquery-migrate-3.0.1.min.js') }}"></script>
-  <script src="{{ asset('js/jquery-ui.js') }}"></script>
-  <script src="{{ asset('js/popper.min.js') }}"></script>
-  <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-  <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
-  <script src="{{ asset('js/mediaelement-and-player.min.js') }}"></script>
-  <script src="{{ asset('js/jquery.stellar.min.js') }}"></script>
-  <script src="{{ asset('js/jquery.countdown.min.js') }}"></script>
-  <script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
-  <script src="{{ asset('js/bootstrap-datepicker.min.js') }}"></script>
-  <script src="{{ asset('js/aos.js') }}"></script>
-  <script src="{{ asset('js/circleaudioplayer.js') }}"></script>
+<script src="{{ asset('public/js/jquery-3.3.1.min.js') }}"></script>
+  <script src="{{ asset('public/js/jquery-migrate-3.0.1.min.js') }}"></script>
+  <script src="{{ asset('public/js/jquery-ui.js') }}"></script>
+  <script src="{{ asset('public/js/popper.min.js') }}"></script>
+  <script src="{{ asset('public/js/bootstrap.min.js') }}"></script>
+  <script src="{{ asset('public/js/owl.carousel.min.js') }}"></script>
+  <script src="{{ asset('public/js/mediaelement-and-player.min.js') }}"></script>
+  <script src="{{ asset('public/js/jquery.stellar.min.js') }}"></script>
+  <script src="{{ asset('public/js/jquery.countdown.min.js') }}"></script>
+  <script src="{{ asset('public/js/jquery.magnific-popup.min.js') }}"></script>
+  <script src="{{ asset('public/js/bootstrap-datepicker.min.js') }}"></script>
+  <script src="{{ asset('public/js/aos.js') }}"></script>
+  <script src="{{ asset('public/js/circleaudioplayer.js') }}"></script>
 
-  <script src="{{ asset('js/main.js') }}"></script>
+  <script src="{{ asset('public/js/main.js') }}"></script>
 
 
-    <script src="{{ asset('js1/jquery-3.3.1.min.js') }}"></script>
-  <script src="{{ asset('js1/jquery-migrate-3.0.1.min.js') }}"></script>
-  <script src="{{ asset('js1/jquery-ui.js') }}"></script>
-  <script src="{{ asset('js1/popper.min.js') }}"></script>
-  <script src="{{ asset('js1/bootstrap.min.js') }}"></script>
-  <script src="{{ asset('js1/owl.carousel.min.js') }}"></script>
-  <script src="{{ asset('js1/jquery.stellar.min.js') }}"></script>
-  <script src="{{ asset('js1/jquery.countdown.min.js') }}"></script>
-  <script src="{{ asset('js1/bootstrap-datepicker.min.js') }}"></script>
-  <script src="{{ asset('js1/jquery.easing.1.3.js') }}"></script>
-  <script src="{{ asset('js1/aos.js') }}"></script>
-  <script src="{{ asset('js1/jquery.fancybox.min.js') }}"></script>
-  <script src="{{ asset('js1/jquery.sticky.js') }}"></script>
-  <script src="{{ asset('js1/jquery.mb.YTPlayer.min.js') }}"></script>
+    <script src="{{ asset('public/js1/jquery-3.3.1.min.js') }}"></script>
+  <script src="{{ asset('public/js1/jquery-migrate-3.0.1.min.js') }}"></script>
+  <script src="{{ asset('public/js1/jquery-ui.js') }}"></script>
+  <script src="{{ asset('public/js1/popper.min.js') }}"></script>
+  <script src="{{ asset('public/js1/bootstrap.min.js') }}"></script>
+  <script src="{{ asset('public/js1/owl.carousel.min.js') }}"></script>
+  <script src="{{ asset('public/js1/jquery.stellar.min.js') }}"></script>
+  <script src="{{ asset('public/js1/jquery.countdown.min.js') }}"></script>
+  <script src="{{ asset('public/js1/bootstrap-datepicker.min.js') }}"></script>
+  <script src="{{ asset('public/js1/jquery.easing.1.3.js') }}"></script>
+  <script src="{{ asset('public/js1/aos.js') }}"></script>
+  <script src="{{ asset('public/js1/jquery.fancybox.min.js') }}"></script>
+  <script src="{{ asset('public/js1/jquery.sticky.js') }}"></script>
+  <script src="{{ asset('public/js1/jquery.mb.YTPlayer.min.js') }}"></script>
 
-  <script src="{{ asset('js1/main.js') }}"></script>
+  <script src="{{ asset('public/js1/main.js') }}"></script>
 
     
   </body>

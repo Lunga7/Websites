@@ -62,7 +62,7 @@
                         @if($arts->image)
                         <div class="col-md-3"></div>
                         <div class="col-md-9">
-                            <img src="{{ asset('storage/arts/'.$arts->image) }}" style="width:150px;">
+                            <img src="{{ asset('public/storage/arts/'.$arts->image) }}" style="width:150px;">
                         </div>
                         <div class="clearfix"></div>
                         @endif
@@ -80,6 +80,8 @@
                 </div>
             <div class="form-group">
                 <input type="submit" class="btn btn-info" value="Save">
+                <i class="fas fa-arrow-circle-left"></i>
+                <a href="{{ url()->previous() }}" > Previous</a>
             </div>
         </form>
     </div>

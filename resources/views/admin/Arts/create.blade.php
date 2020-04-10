@@ -66,6 +66,8 @@
                 </div>
             <div class="form-group">
                 <input type="submit" class="btn btn-info" value="Save">
+                <i class="fas fa-arrow-circle-left"></i>
+                <a href="{{ url()->previous() }}" > Previous</a>
             </div>
         </form>
     </div>

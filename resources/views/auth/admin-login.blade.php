@@ -3,7 +3,7 @@
 @section('p1')
 <div class="row align-items-center justify-content-center">
     <div class="col-md-7 text-center" data-aos="fade-up" data-aos-delay="400">
-        <h1 class="text-white">Login</h1>
+        <h1 class="text-white">Admin Login</h1>
         <p>Loign below.</p>
     </div>
 </div>
@@ -16,7 +16,7 @@
             
                 
                 
-                    <form method="POST" class="contact-form" action="{{ route('login') }}">
+                    <form method="POST" class="contact-form" action="{{ route('admin.login.submit') }}">
                         @csrf
 
                         <div class="row form-group">

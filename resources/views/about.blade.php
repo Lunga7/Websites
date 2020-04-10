@@ -14,7 +14,7 @@
 
 <div class="row align-items-center">
         <div class="col-lg-5 ml-auto order-lg-2 mb-5" data-aos="fade-up" data-aos-delay="200">
-          <img src="images/img_2.jpg" alt="Image" class="img-fluid">
+          <img src="public/images/img_2.jpg" alt="Image" class="img-fluid">
         </div>
         <div class="col-lg-6 order-lg-1" data-aos="fade-up" data-aos-delay="100">
           <div class="site-section-heading text-left mb-5 w-border">

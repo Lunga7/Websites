@@ -23,7 +23,7 @@
 <section class="content">
     <div class="container-fluid">
         <p>
-            <a href="{{ route('admin.categories.create') }}" class="btn btn-primary">Add New Category</a>
+            <a href="{{ route('admin.categories.create') }}" class="btn btn-primary"><i class="fas fa-plus"></i> Add New Category</a>
         </p>
         <table class="table table-bordered table-striped">
             <tr>

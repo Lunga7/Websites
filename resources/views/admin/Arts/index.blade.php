@@ -23,7 +23,7 @@
 <section class="content">
     <div class="container-fluid">
         <p>
-            <a href="{{ route('admin.arts.create') }}" class="btn btn-primary">Add New Art</a>
+            <a href="{{ route('admin.arts.create') }}" class="btn btn-primary"><i class="fas fa-plus"></i> Add New Art</a>
         </p>
         <table class="table table-bordered table-striped">
             <tr>

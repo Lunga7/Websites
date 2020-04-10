@@ -7,9 +7,6 @@
           <p>You can contact us using the details or form below.</p>
         </div>
       </div>
-
-
-    
 @endsection
 
 
@@ -22,8 +19,8 @@
 
   <div class="col-md-12 col-lg-7 mb-5">
 
-  <form action="#" class="contact-form">
-
+  <form action="#" method="POST" class="contact-form">
+    @csrf
     <div class="row form-group">
       <div class="col-md-12 mb-3 mb-md-0">
         {{Form::label('name', 'Name')}}
