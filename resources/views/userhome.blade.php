@@ -4,8 +4,7 @@
 <div class="row align-items-center justify-content-center">
   <div class="col-md-7 text-center" data-aos="fade-up" data-aos-delay="400">
     <h1 class="mb-4">The Art platform</h1>
-    <h1 class="mb-4">Logged in as USER</h1>
-    <p><a href="/umphakostreams/login" class="btn btn-primary px-4 py-3">Download</a>   <a href="/umphakostreams/upload" class="btn btn-primary px-4 py-3">Upload Art</a></p>
+    <p><a href="/umphakostreams/login" class="btn btn-primary px-4 py-3">Download</a>   <a href="/umphakostreams/login" class="btn btn-primary px-4 py-3">Upload Art</a></p>
   <li class="nav-item">
             <a class="nav-link" href="{{ route('logout') }}"
                                       onclick="event.preventDefault();

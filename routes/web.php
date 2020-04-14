@@ -19,21 +19,14 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::namespace('Admin')->prefix('admin')->as('admin.')->middleware('auth')->group(function()
+Route::namespace('Admin')->prefix('admin')->as('admin.')->middleware('isadmin')->group(function()
 {
     Route::get('/', 'HomeController@index')->name('home');
     Route::resource('/categories','CategoriesController');
     Route::resource('/arts','ArtsController');
 });
 
-/*
-Route::prefix('admin')->group(function()
-{
-    Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
-    Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
-    Route::get('/', 'AdminController@index')->name('admin.dashboard');
-});
-*/
+
 
 
 
