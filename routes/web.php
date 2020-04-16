@@ -38,10 +38,13 @@ Route::get('/contact', 'PagesController@getContact');;
 
 Route::get('/messages', 'MessagesController@getMessages');
 
+Route::get('/download', 'DownloadsController@index');
+
 Route::post('/contact/submit', 'MessagesController@submit');
 
 Route::get('/upload', function () {
     return view('upload');
 });
+
 
 
