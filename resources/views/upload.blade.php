@@ -1,17 +1,14 @@
-@extends('layouts.app')
-
-@section('p1')
-<div class="row align-items-center justify-content-center">
-        <div class="col-md-7 text-center" data-aos="fade-up" data-aos-delay="400">
-            <h1 class="text-white">Upload Your Art</h1>
-            <p>Select the category of your art.</p>
-        
-        </div>
-        </div>
-@endsection
-
+@extends('layouts.down_upload')
 
 @section('content')
+
+<div class="row mb-5">
+    <div class="col-12 section-title text-center mb-5">
+        <h2 class="d-block">UPLOAD YOUR ART</h2>
+        <p>Upload by selecting from the categories</p>
+    </div>
+</div>
+
 <div class="row">
 <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="100">
           <a href="/umphakostreams/login"><img src="public/images/p1.jpg" alt="Image" class="img-fluid"></a>
