@@ -1,4 +1,4 @@
-    
+    <!--
      <a href="#" class="mx-auto d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-white"><span
                 class="icon-menu h3"></span></a>
 
@@ -32,4 +32,44 @@
           </div>
         </div>
       </div>
-    
+    -->
+
+
+	<!--- Navbar --->
+	<nav class="navbar navbar-expand-lg">
+		<div class="container">
+			<a class="navbar-brand text-white" href="/umphakostreams/userhome"><i class="fa fa-graduation-cap fa-lg mr-2"></i>UmphakoStreams</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nvbCollapse" aria-controls="nvbCollapse">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="nvbCollapse">
+				<ul class="navbar-nav ml-auto">
+        
+
+					<li class="nav-item pl-1">
+						<a class="nav-link" href="/umphakostreams/userhome"><i class="fa fa-home fa-fw mr-1"></i>Home</a>
+					</li><!--
+					<li class="nav-item active pl-1">
+						<a class="nav-link" href="/umphakostreams/about"><i class="fa fa-th-list fa-fw mr-1"></i>About</a>
+					</li>-->
+					<li class="nav-item pl-1">
+						<a class="nav-link" href="/umphakostreams/about"><i class="fa fa-info-circle fa-fw mr-1"></i>About</a>
+					</li>
+					<li class="nav-item pl-1">
+						<a class="nav-link" href="/umphakostreams/contact"><i class="fa fa-phone fa-fw fa-rotate-180 mr-1"></i>Contacts</a>
+          </li>
+        
+              
+          <!--
+					<li class="nav-item pl-1">
+						<a class="nav-link" href="#"><i class="fa fa-user-plus fa-fw mr-1"></i>Register</a>
+					</li>
+					<li class="nav-item pl-1">
+						<a class="nav-link" href="#"><i class="fa fa-sign-in fa-fw mr-1"></i>Login</a>
+					</li>-->
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!--# Navbar #-->
+

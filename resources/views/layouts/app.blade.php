@@ -25,6 +25,10 @@
     <link rel="stylesheet" href="{{ asset('public/css/style.css') }}">
 
     <link rel="stylesheet" href="{{ asset('public/css1/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/css/style2.css') }}">
+
+ 
+
     
   </head>
   <body>
@@ -126,6 +130,11 @@
   <script src="{{ asset('public/js1/jquery.mb.YTPlayer.min.js') }}"></script>
 
   <script src="{{ asset('public/js1/main.js') }}"></script>
+
+  <!--===============================================================================================-->	
+
+
+    
 
     
   </body>
